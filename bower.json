@@ -2,7 +2,7 @@
     "name": "mean",
     "version": "1.0.0",
     "dependencies": {
-        "bootstrap": "2.3.2",
+        "bootstrap": "bowerjs/bootstrap#2.3.2",
         "angular": "~1.0.6",
         "angular-resource": "~1.0.6",
         "angular-cookies": "~1.0.6",

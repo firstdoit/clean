@@ -3,3 +3,5 @@
 .sass-cache/
 node_modules/
 public/lib
+.idea/
+npm-debug.log
