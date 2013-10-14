@@ -1,4 +1,4 @@
-angular.module("mean.system").factory "Global", [->
+angular.module("clean.system").factory "Global", [->
   _this = this
   _this._data =
     user: window.user

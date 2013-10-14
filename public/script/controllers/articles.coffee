@@ -1,4 +1,4 @@
-angular.module("mean.articles").controller "ArticlesController", ["$scope", "$routeParams", "$location", "Global", "Articles", ($scope, $routeParams, $location, Global, Articles) ->
+angular.module("clean.articles").controller "ArticlesController", ["$scope", "$routeParams", "$location", "Global", "Articles", ($scope, $routeParams, $location, Global, Articles) ->
   $scope.global = Global
   $scope.create = ->
     article = new Articles(
