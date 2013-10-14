@@ -41,3 +41,6 @@ console.log "App started on port #{config.port} with environment #{config.env}"
 logger.init app, passport, mongoose
 
 exports = module.exports = app
+
+# Kick in livereload by creating a file in the public dir
+fs.writeFile('./public/livereload', new Date())

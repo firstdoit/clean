@@ -1,7 +1,7 @@
 {
 	"name": "clean",
 	"description": "CLEAN Stack - A modern and minimalist webapp CoffeeScript stack",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"private": false,
 	"author": "Guilherme Rodrigues",
 	"repository": {
@@ -38,15 +38,15 @@
 		"harp": "latest"
 	},
 	"devDependencies": {
-    "supertest": "latest",
-    "should": "latest",
-    "grunt": "latest",
-		"grunt-contrib-coffee": "latest",
-		"grunt-contrib-watch": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-mocha-test": "latest",
-    "grunt-concurrent": "latest",
-    "grunt-nodemon": "latest"
+        "supertest": "latest",
+        "should": "latest",
+        "grunt": "latest",
+        "grunt-contrib-coffee": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-contrib-less": "latest",
+        "grunt-mocha-test": "latest",
+        "grunt-concurrent": "latest",
+        "grunt-nodemon": "latest"
 	},
 	"peerDependencies": {
 		"grunt-cli": "*"

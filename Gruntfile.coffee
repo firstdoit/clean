@@ -5,14 +5,13 @@ module.exports = (grunt) ->
   # Project Configuration
   grunt.initConfig
     watch:
-      options:
-        livereload: true
-
-      client:
-        files: ['public/**/*.*']
+      public:
+        files: ['public/**']
+        options:
+          livereload: true
 
     mochaTest:
-      test:
+      main:
         options:
           reporter: 'spec'
         src: ['test/**/*.coffee']
@@ -21,12 +20,17 @@ module.exports = (grunt) ->
       main:
         options:
           file: 'server.coffee'
-          ignoredFiles: ['node_modules/**', '.idea/**', 'public/**']
+          ignoredFiles: ['node_modules/**', '.idea/**', 'public/**', '.git/**']
+          watchedFolders: ['app', 'config']
+          debug: true
+          delayTime: 1
 
     concurrent:
-      tasks: ['nodemon', 'watch']
-      options:
-        logConcurrentOutput: true
+      main:
+        tasks: ['nodemon', 'watch']
+        options:
+          logConcurrentOutput: true
+          limit: 2
 
   #Load NPM tasks
   grunt.loadNpmTasks name for name of pkg.devDependencies when name[0..5] is 'grunt-'

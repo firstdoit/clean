@@ -3,5 +3,6 @@
 .sass-cache/
 node_modules/
 public/lib
+public/livereload
 .idea/
 npm-debug.log
