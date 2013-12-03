@@ -1,54 +1,55 @@
 {
-	"name": "clean",
-	"description": "CLEAN Stack - A modern and minimalist webapp CoffeeScript stack",
-	"version": "0.2.0",
-	"private": false,
-	"author": "Guilherme Rodrigues",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gadr/clean.git"
-	},
-	"engines": {
-		"node": "0.10.x",
-		"npm": "1.2.x"
-	},
-	"scripts": {
-		"start": "grunt",
-		"test": "grunt test",
-		"postinstall": "bower install"
-	},
-	"dependencies": {
-		"express": "latest",
-		"ejs": "latest",
-		"ejs-locals": "latest",
-		"mongoose": "latest",
-		"connect-mongo": "latest",
-		"connect-flash": "latest",
-		"passport": "latest",
-		"passport-local": "latest",
-		"passport-facebook": "latest",
-		"passport-twitter": "latest",
-		"passport-github": "latest",
-		"passport-google-oauth": "latest",
-		"underscore": "latest",
-		"async": "latest",
-		"view-helpers": "latest",
-		"glob": "latest",
-		"mean-logger": "latest",
-		"harp": "latest"
-	},
-	"devDependencies": {
-        "supertest": "latest",
-        "should": "latest",
-        "grunt": "latest",
-        "grunt-contrib-coffee": "latest",
-        "grunt-contrib-watch": "latest",
-        "grunt-contrib-less": "latest",
-        "grunt-mocha-test": "latest",
-        "grunt-concurrent": "latest",
-        "grunt-nodemon": "latest"
-	},
-	"peerDependencies": {
-		"grunt-cli": "*"
-	}
+  "name": "clean",
+  "description": "CLEAN Stack - A modern and minimalist webapp CoffeeScript stack",
+  "version": "0.3.0",
+  "private": false,
+  "author": "Guilherme Rodrigues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gadr/clean.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "start": "grunt",
+    "test": "mocha --compilers coffee:coffee-script --reporter spec test/**"
+  },
+  "dependencies": {
+    "express": "latest",
+    "mongoose": "latest",
+    "connect-mongo": "latest",
+    "connect-flash": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-facebook": "latest",
+    "passport-twitter": "latest",
+    "passport-github": "latest",
+    "passport-google-oauth": "latest",
+    "underscore": "latest",
+    "async": "latest",
+    "glob": "latest",
+    "mean-logger": "latest",
+    "harp": "latest",
+    "adaro": "~0.1.5",
+    "dustjs-linkedin": "~2.2.0",
+    "dustjs-helpers": "~1.1.1"
+  },
+  "devDependencies": {
+    "should": "latest",
+    "grunt": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-mocha-test": "~0.8.0",
+    "grunt-concurrent": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-release": "~0.6.0"
+  },
+  "peerDependencies": {
+    "grunt-cli": "*",
+    "bower": "*"
+  }
 }

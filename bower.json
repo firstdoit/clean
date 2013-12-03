@@ -1,24 +1,19 @@
 {
-    "name": "mean",
-    "version": "1.0.0",
-    "dependencies": {
-        "bootstrap": "bowerjs/bootstrap#2.3.2",
-        "angular": "~1.0.6",
-        "angular-resource": "~1.0.6",
-        "angular-cookies": "~1.0.6",
-        "angular-bootstrap": "~0.4.0",
-        "angular-ui-utils": "0.0.4",
-        "json3": "~3.2.4",
-        "jquery": "~1.9.1"
-    },
-    "exportsOverride": {
-    	"bootstrap": {
-    		"css": "docs/assets/css/bootstrap*.css",
-    		"js": "docs/assets/js/bootstrap.js",
-    		"img": "docs/assets/img/glyphicons-halflings*.png"
-    	},
-        "angular-ui-utils": {
-            "modules": "modules/route/route.js"
-        }
-    }
+  "name": "clean",
+  "version": "0.3.0",
+  "dependencies": {
+    "bootstrap": "3.0.0",
+    "angular": "1.2.*",
+    "angular-route": "~1.2.*",
+    "angular-resource": "1.2.*",
+    "angular-cookies": "1.2.*",
+    "angular-bootstrap": "~0.6.0",
+    "angular-translate": "~1.1.0",
+    "angular-translate-loader-static-files": "~0.1.5",
+    "angular-animate": "~1.2.*",
+    "underscore": "~1.5.2"
+  },
+  "resolutions": {
+    "angular": "1.2.*"
+  }
 }

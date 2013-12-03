@@ -1,0 +1,8 @@
+<h1>Sorry about this...</h1>
+<br/>
+<span>{httpStatus}</span>
+<div id="error-message-box">
+    <div id="error-stack-trace">
+        <pre><code>{error}</code></pre>
+    </div>
+</div>

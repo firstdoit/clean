@@ -1,4 +1,3 @@
-<% layout('../layout') %>
 <div class="row">
     <div class="offset1 span5"><a href="/auth/facebook"><img
                     src="/img/icons/facebook.png"/></a><a
@@ -6,36 +5,18 @@
                 href="/auth/twitter"><img src="/img/icons/twitter.png"/></a><a
                 href="/auth/google"><img src="/img/icons/google.png"/></a></div>
     <div class="span6">
-        <form action="/users" method="post" class="signup form-horizontal">
+        <form action="/users/session" method="post"
+              class="signin form-horizontal">
             <p class="error">
-            <ul>
-                <% if (errors) for(var i=0; i<errors.length; i++) {%>
-                <li><%= errors[i] %></li>
-                <% } %>
-            </ul>
+                {message}
             </p>
-            <div class="control-group">
-                <label for="name" class="control-label">Full name</label>
 
-                <div class="controls">
-                    <input id="name" type="text" name="name"
-                           placeholder="Full name"/>
-                </div>
-            </div>
             <div class="control-group">
                 <label for="email" class="control-label">Email</label>
 
                 <div class="controls">
                     <input id="email" type="text" name="email"
                            placeholder="Email"/>
-                </div>
-            </div>
-            <div class="control-group">
-                <label for="username" class="control-label">Username</label>
-
-                <div class="controls">
-                    <input id="username" type="text" name="username"
-                           placeholder="Username"/>
                 </div>
             </div>
             <div class="control-group">
@@ -47,10 +28,11 @@
                 </div>
             </div>
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Sign up</button>
+                <button type="submit" class="btn btn-primary">Sign in</button>
                 &nbsp;
-                or&nbsp;<a href="/signin" class="show-login">login</a>
+                or&nbsp;<a href="/signup" class="show-signup">Sign up</a>
             </div>
         </form>
+
     </div>
 </div>

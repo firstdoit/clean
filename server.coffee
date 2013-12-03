@@ -9,6 +9,7 @@ path = require 'path'
 mongoose = require 'mongoose'
 _ = require 'underscore'
 glob = require 'glob'
+pkg = require './package.json'
 
 ###
 Main application entry file.
@@ -22,6 +23,7 @@ defaultConfig =
   db: process.env.MONGOHQ_URL
   secret: process.env.SECRET or 'CLEAN'
   env: process.env.NODE_ENV or 'development'
+  version: pkg.version
 
 config = _.extend(defaultConfig, require("./config/env/#{defaultConfig.env}.json") or {})
 app = express() # Create your express app

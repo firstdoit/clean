@@ -1,0 +1,11 @@
+{
+    "user": {
+        "permissions": {
+            "study": "Assistir a aula",
+            "teach": "Dar aula",
+            "manage": "Organizar usuários e salas",
+            "classroom": "Administrar sala de aula",
+            "course": "Administrar curso"
+        }
+    }
+}

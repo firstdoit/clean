@@ -1,0 +1,11 @@
+{
+    "user": {
+        "permissions": {
+            "study": "Study",
+            "teach": "Teach",
+            "manage": "Manage users and classes",
+            "classroom": "Edit classroom",
+            "course": "Edit course"
+        }
+    }
+}

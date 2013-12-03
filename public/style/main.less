@@ -1,27 +1,164 @@
 @import 'views/articles.less';
 
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/lato300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato400.woff) format('woff');
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-weight: 300;}
+
 .navbar .nav>li>a.brand {
-    padding-left:20px;
-    margin-left:0
+  padding-left:20px;
+  margin-left:0
+}
+
+.panel {
+  position: relative;
+  a {
+    color: #08c;
+  }
+  .lead {
+    font-size: 28px;
+    small {
+      font-weight: 100;
+      line-height: 120%;
+      text-align: right;
+    }
+  }
+  .glyphicon-trash {
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  &:hover .glyphicon-trash {opacity: 1;}
+  .meta {color: #666}
 }
 
 .content {
-    margin-top:50px;
-    width:100%
+  margin-top:50px;
+  width:100%
+}
+
+.page-header {
+  h2 {margin-top: 0;}
+  .pull-right {
+    margin-top: 20px;
+  }
+}
+
+a.list-group-item .list-group-item-heading {padding-right: 100px;}
+
+.editable {
+  -webkit-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+
+  &:hover {
+    background: #FFFEDD;
+    cursor: text;
+  }
+}
+
+.btn-types {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.sidebar-progress .panel-heading .badge {
+  background-color: #ddd;
+  color: #aaa;
+}
+.progress {
+  height: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.c-video {
+  text-align: center;
+}
+.badge-notif {
+  margin-left: 4px;
+}
+.issues-list {
+  .form-control {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+.list-group-item h4 {margin-top: 0;}
+
+.panel {
+  .page-header {margin-top: 0;}
 }
 
 footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background:#ddd;
-    -webkit-box-shadow:0 8px 6px 6px black;
-    -moz-box-shadow:0 8px 6px 6px black;
-    box-shadow:0 8px 6px 6px black
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#ddd;
+  -webkit-box-shadow:0 8px 6px 6px black;
+  -moz-box-shadow:0 8px 6px 6px black;
+  box-shadow:0 8px 6px 6px black
 }
 
 footer p {
-    padding:5px 0 12px 10px
+  padding:5px 0 12px 10px
+}
+
+/*
+ The animate class is apart of the element and the ng-enter class
+ is attached to the element once the enter animation event is triggered
+*/
+.fade-in.ng-enter {
+  -webkit-transition: 0.4s linear all; /* Safari/Chrome */
+  transition: 0.4s linear all; /* All other modern browsers and IE10+ */
+
+  /* The animation preparation code */
+  opacity: 0;
+}
+
+/*
+ Keep in mind that you want to combine both CSS
+ classes together to avoid any CSS-specificity
+ conflicts
+*/
+.fade-in.ng-enter.ng-enter-active {
+  /* The animation code itself */
+  opacity: 1;
 }
